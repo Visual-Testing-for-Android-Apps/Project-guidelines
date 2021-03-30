@@ -10,7 +10,7 @@
   - [2. Documentation](#2-documentation)
 
 ## Resources
-* General project guidelines https://github.com/elsewhencode/project-guidelines#documentation
+* General [project guidelines](https://github.com/elsewhencode/project-guidelines#documentation)
 
 ## Team specific guidelines
 Any standard that you 
