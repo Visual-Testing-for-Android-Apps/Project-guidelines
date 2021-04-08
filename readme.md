@@ -13,7 +13,6 @@
 * General [project guidelines](https://github.com/elsewhencode/project-guidelines#documentation)
 
 ## Team specific guidelines
-Any standard that you 
 
 * Don't modify code that isn't yours, if you think there is an issue with someone else's code, please submit and issue.
 * Avoid pretty format/indent code that were part of previous commits, because this make code reviews quite tedious.
