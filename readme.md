@@ -15,8 +15,8 @@
 ## Team specific guidelines
 
 * Don't modify code that isn't yours, if you think there is an issue with someone else's code, please submit and issue.
-* Avoid pretty format/indent code that were part of previous commits, because this make code reviews quite tedious.
-* In general, the more people working on the same code block/file, the more bugs will added, so avoid that 
+* Even though we are using [super linter](https://github.com/github/super-linter) in our pipeline, avoid structuring/pretty format/indent code that were part of previous commits, because this make code reviews quite tedious.
+* In general, the more people working on the same code block/file, the more bugs will added, so avoid this practise.
 
 
 ## 1. Git
@@ -37,7 +37,7 @@ There are a set of rules to keep in mind:
     _Why:_
     > It notifies team members that they have completed a feature. It also enables easy peer-review of the code and dedicates forum for discussing the proposed feature.
 
-* Update your local `develop` branch and do an interactive rebase before pushing your feature and making a Pull Request.
+* {NOT ENFORCED} Update your local `develop` branch and do an interactive rebase before pushing your feature and making a Pull Request. Or squash your pull request with the target branch
 
     _Why:_
     > Rebasing will merge in the requested branch (`master` or `develop`) and apply the commits that you have made locally to the top of the history without creating a merge commit (assuming there were no conflicts). Resulting in a nice and clean history. [read more ...](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
@@ -144,14 +144,14 @@ Having a good guideline for creating commits and sticking to it makes working wi
     _Why:_
     > Git is smart enough to distinguish the first line of your commit message as your summary. In fact, if you try git shortlog, instead of git log, you will see a long list of commit messages, consisting of the id of the commit, and the summary only.
 
- * Limit the subject line to 50 characters and Wrap the body at 72 characters.
+ * {NOT ENFORCED} Limit the subject line to 50 characters and Wrap the body at 72 characters.
 
     _why_
     > Commits should be as fine-grained and focused as possible, it is not the place to be verbose. [read more...](https://medium.com/@preslavrachev/what-s-with-the-50-72-rule-8a906f61f09c)
 
  * Capitalize the subject line.
  * Do not end the subject line with a period.
- * Use [imperative mood](https://en.wikipedia.org/wiki/Imperative_mood) in the subject line.
+ * {NOT ENFORCED} Use [imperative mood](https://en.wikipedia.org/wiki/Imperative_mood) in the subject line.
 
     _Why:_
     > Rather than writing messages that say what a committer has done. It's better to consider these messages as the instructions for what is going to be done after the commit is applied on the repository. [read more...](https://news.ycombinator.com/item?id=2079612)
